@@ -35,7 +35,7 @@ export default function StudentPortalHomepage() {
       <section className="flex flex-col items-center justify-center px-4 py-16 md:py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl font-thin dark:text-zinc-100 text-zinc-700 tracking-tight">Welcome to <span className="font-bold text-zinc-900 dark:text-white ">Student Portal</span></h1>
+            <h1 className="text-5xl md:text-6xl font-thin dark:text-zinc-100 text-zinc-700 tracking-tight">Welcome to <span className="font-bold text-zinc-900 dark:text-white ">Student Portal</span></h1>
 
             <p className="text-lg md:text-xl text-gray-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
               Your comprehensive academic hub for courses, assignments, grades, and campus updates. Everything you need

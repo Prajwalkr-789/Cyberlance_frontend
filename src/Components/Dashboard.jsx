@@ -37,7 +37,7 @@ const DashboardElegant = () => {
   return (
     <div className="min-h-screen ">
       <div className="bg-white dark:bg-transparent border-b border-slate-200 dark:border-zinc-700">
-        <div className="max-w-7xl mx-auto px-4 py-3">
+        <div className="max-w-7xl mx-auto px-1 md:px-4 py-3">
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-extralight text-slate-900 dark:text-white mb-2">
@@ -50,7 +50,7 @@ const DashboardElegant = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-1 md:px-6 py-8">
         {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1 space-y-6">
