@@ -32,7 +32,7 @@ export default function StudentPortalHomepage() {
   return (
     <div className="min-h-screen bg-white dark:bg-black text-gray-800 dark:text-gray-200">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center px-4 py-16 md:py-24">
+      <section className="flex flex-col items-center justify-center px-4 py-16 md:py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Welcome to Student Portal</h1>
@@ -46,20 +46,17 @@ export default function StudentPortalHomepage() {
             <button className="px-8 py-3 text-lg font-semibold rounded-xl bg-zinc-900 text-zinc-100 dark:bg-zinc-100  hover:bg-zinc-800 dark:text-zinc-800 transition-colors duration-200">
               Get Started
             </button>
-            {/* <button className="px-8 py-3 text-lg font-semibold rounded-xl border-2 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-zinc-900 bg-transparent transition-colors duration-200">
-              Register
-            </button> */}
+
           </Link>
         </div>
       </section>
 
-      {/* Quick Access Cards */}
       <section className="px-4 pb-16 md:pb-24">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          {/* <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Features</h2>
             <p className="text-gray-600 dark:text-gray-400">Access all your academic essentials in one place.</p>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {quickAccessCards.map((card, index) => {
@@ -71,7 +68,7 @@ export default function StudentPortalHomepage() {
                 >
                   <div className="p-6 text-center space-y-4">
                     <div className="flex justify-center">
-                      <div className="p-3 rounded-xl bg-gray-100 dark:bg-gray-800 group-hover:bg-zinc-600 group-hover:text-white transition-colors duration-300">
+                      <div className="p-3 rounded-xl bg-gray-100 dark:bg-zinc-800 group-hover:bg-zinc-700 group-hover:text-white transition-colors duration-300">
                         <IconComponent className="w-8 h-8" />
                       </div>
                     </div>
@@ -92,7 +89,6 @@ export default function StudentPortalHomepage() {
       <footer className="mt-12 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-black text-gray-700 dark:text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        {/* About */}
         <div>
           <h2 className="text-lg font-semibold mb-3">Student Portal</h2>
           <p className="text-sm leading-relaxed">
@@ -100,7 +96,6 @@ export default function StudentPortalHomepage() {
           </p>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h2 className="text-lg font-semibold mb-3">Quick Links</h2>
           <ul className="space-y-2 text-sm">
@@ -111,7 +106,6 @@ export default function StudentPortalHomepage() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h2 className="text-lg font-semibold mb-3">Contact</h2>
           <ul className="space-y-2 text-sm">

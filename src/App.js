@@ -13,7 +13,6 @@ import Homepage from './Components/Homepage';
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // Layout for pages that need sidebar + navbar
   const PortalLayout = () => (
     <div className="flex flex-col h-screen">
       <div className="flex flex-1">
@@ -35,12 +34,9 @@ function App() {
     <Router>
       <Navbar toggleSidebar={() => setSidebarOpen(!sidebarOpen)} setSidebarOpen={sidebarOpen} />
 
-      <Routes>
-        {/* Public Homepage (no sidebar, no navbar) */}
-        
+      <Routes>        
         <Route path="/" element={<Homepage />} />
 
-        {/* Protected student portal pages */}
         <Route path="/pages/*" element={<PortalLayout />} />
       </Routes>
     </Router>

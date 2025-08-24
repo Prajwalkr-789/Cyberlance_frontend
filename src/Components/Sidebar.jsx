@@ -1,4 +1,4 @@
-import { BookOpen, FileText, GraduationCap, Home, X } from 'lucide-react';
+import { BookOpen, FileText, GraduationCap, Home, X,LayoutDashboard  } from 'lucide-react';
 import  { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ function Sidebar({sidebarOpen,setSidebarOpen}) {
   const [activeSection, setActiveSection] = useState("dashboard");
 
   const menuItems = [
-    { id: "dashboard", label: "Dashboard", icon: Home },
+    { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
     { id: "courses", label: "Courses", icon: BookOpen },
     { id: "cgpa", label: "CGPA", icon: GraduationCap },
     { id: "assignments", label: "Assignments", icon: FileText },
@@ -26,7 +26,6 @@ function Sidebar({sidebarOpen,setSidebarOpen}) {
           <h1 className="text-xl font-bold text-zinc-800 dark:text-zinc-200">
             Student Portal
           </h1>
-          {/* Close button on mobile */}
           <button
             className="lg:hidden p-2 rounded-md text-zinc-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800"
             onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -36,6 +35,19 @@ function Sidebar({sidebarOpen,setSidebarOpen}) {
         </div>
 
         <nav className="px-4 space-y-2 mt-4">
+            <Link
+                to={`/`}
+                
+                className={`inline-flex items-center justify-start rounded-md font-medium transition-colors h-10 py-2 px-4 w-full gap-3 ${
+                  activeSection === "home"
+                    ? "bg-slate-900 text-white hover:bg-slate-800 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-200"
+                    : "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-zinc-900 dark:hover:text-slate-50 text-zinc-900 dark:text-white"
+                }`}
+
+              >
+                <Home className="h-5 w-5" />
+                Home
+              </Link>
           {menuItems.map((item) => {
             const Icon = item.icon;
             return (
@@ -49,7 +61,7 @@ function Sidebar({sidebarOpen,setSidebarOpen}) {
                 }`}
                 onClick={() => {
                   setActiveSection(item.id);
-                  setSidebarOpen(false); // close sidebar on mobile
+                  setSidebarOpen(false);
                 }}
               >
                 <Icon className="h-5 w-5" />
@@ -60,7 +72,6 @@ function Sidebar({sidebarOpen,setSidebarOpen}) {
         </nav>
       </aside>
 
-      {/* Overlay for mobile */}
       {sidebarOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"

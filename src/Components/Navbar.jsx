@@ -8,13 +8,17 @@ import {
   User,
   X,
 } from "lucide-react";
-import React, { useState } from "react";
+import  { useEffect, useState } from "react";
 import Logo from '../assests/Academic.png'
 import { Link } from "react-router-dom";
 
 function Navbar({ toggleSidebar,sidebarOpen }) {
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() =>{
+    document.documentElement.classList.add("dark")
+  },[])
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);

@@ -1,7 +1,6 @@
 import { FileText, GraduationCap, User, Bell, Award, Shield, BookOpen ,Mail, Phone } from "lucide-react"
 
 const DashboardElegant = () => {
-  // Example Data (replace with real API later)
   const profile = {
     name: "John Doe",
     id: "2024001",
@@ -37,7 +36,6 @@ const DashboardElegant = () => {
 
   return (
     <div className="min-h-screen ">
-      {/* Header Section */}
       <div className="bg-white dark:bg-transparent border-b border-slate-200 dark:border-zinc-700">
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
@@ -47,15 +45,7 @@ const DashboardElegant = () => {
               </h1>
               <p className="text-slate-600 dark:text-zinc-400">Student Dashboard 2024</p>
             </div>
-            {/* <div className="flex items-center gap-4">
-              <div className="text-right">
-                <p className="text-sm text-slate-500 dark:text-slate-400">Student ID</p>
-                <p className="font-mono text-lg text-slate-900 dark:text-white">{profile.id}</p>
-              </div>
-              <div className="w-12 h-12 bg-slate-100 dark:bg-transparent rounded-full flex items-center justify-center">
-                <User className="h-6 w-6 text-slate-600 dark:text-slate-400" />
-              </div>
-            </div> */}
+
           </div>
         </div>
       </div>
@@ -63,9 +53,7 @@ const DashboardElegant = () => {
       <div className="max-w-7xl mx-auto px-6 py-8">
         {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Left Column - Personal & Guardian */}
           <div className="lg:col-span-1 space-y-6">
-            {/* Personal Information */}
             <div className="bg-white dark:bg-transparent rounded-lg border border-slate-200 dark:border-zinc-700 overflow-hidden">
               <div className="px-6 py-4 border-b border-slate-200 dark:border-zinc-700">
                 <div className="flex items-center gap-3">
@@ -95,7 +83,6 @@ const DashboardElegant = () => {
               </div>
             </div>
 
-            {/* Guardian Information */}
             <div className="bg-white dark:bg-transparent rounded-lg border border-slate-200 dark:border-zinc-700 overflow-hidden">
               <div className="px-6 py-4 border-b border-slate-200 dark:border-zinc-700">
                 <div className="flex items-center gap-3">
@@ -132,9 +119,7 @@ const DashboardElegant = () => {
             </div>
           </div>
 
-          {/* Center Column - Academic Info */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Academic Program */}
             <div className="bg-white dark:bg-transparent rounded-lg border border-slate-200 dark:border-zinc-700 overflow-hidden">
               <div className="px-6 py-4 border-b border-slate-200 dark:border-zinc-700">
                 <div className="flex items-center gap-3">
@@ -169,7 +154,6 @@ const DashboardElegant = () => {
               </div>
             </div>
 
-            {/* Administrative Tasks */}
             <div className="bg-white dark:bg-transparent rounded-lg border border-slate-200 dark:border-zinc-700 overflow-hidden">
               <div className="px-6 py-4 border-b border-slate-200 dark:border-zinc-700">
                 <div className="flex items-center justify-between">
@@ -206,7 +190,6 @@ const DashboardElegant = () => {
             </div>
           </div>
 
-          {/* Right Column - Faculty */}
           <div className="lg:col-span-1">
             <div className="bg-white dark:bg-transparent rounded-lg border border-slate-200 dark:border-zinc-700 overflow-hidden">
               <div className="px-6 py-4 border-b border-slate-200 dark:border-zinc-700">
